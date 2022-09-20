@@ -11,7 +11,7 @@ import Reidun from "./pages/About"
 
 const App = () => {
   return (<>
-            <div className="appWrapper">
+            <div className="mx-10">
                 <TopNavigation />
                 <Routes>
                     <Route path={"/"} element={<Home />} />

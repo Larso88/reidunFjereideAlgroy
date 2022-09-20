@@ -1,9 +1,11 @@
-import mellomMennesker from "../images/mellomMennesker.jpeg";
 
-const BookCardComponent = (imageSource, altText, ) => {
-    return <div className={"border-2 border-red-300 w-1/3"}>
-        <p className={"text-3xl"}>Mellom Mennesker er nå i salg</p>
-        <img className={""} src={imageSource} alt={altText}/>
+const BookCardComponent = ({imageSource, altText, pText}) => {
+    console.log(altText, imageSource, pText)
+
+    return <div className={"border-2 border-red-300 w-1/2 flex flex-col content-center justify-center p-5"}>
+                <img className={"max-w-xs m-5"} src={imageSource} alt={altText}/>
+                <p className={"text-xl "}>{pText}</p>
+
     </div>
 }
 
