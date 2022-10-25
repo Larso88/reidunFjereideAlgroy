@@ -10,7 +10,7 @@ import Events from "./pages/Events";
 import Reidun from "./pages/About"
 
 const App = () => {
-  return (<>
+  return (<div className={"min-h-screen bg-gradient-to-b from-dark-brown to-light-brown"}>
             <div className="mx-10">
                 <TopNavigation />
                 <Routes>
@@ -21,7 +21,7 @@ const App = () => {
                     <Route path={"/contact"} element={<Contact />} />
                 </Routes>
             </div>
-      </>
+      </div>
   );
 }
 
